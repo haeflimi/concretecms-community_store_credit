@@ -30,27 +30,7 @@ class AccountOverview
     public function build(int $uID, int $historyLimit = 50, int $paidLimit = 25): array
     {
         $tabs = $this->eventTabs($uID);
-        $tabOrderIDs = [];
-        foreach ($tabs as $tab) {
-            if ($tab['order']) {
-                $tabOrderIDs[(int) $tab['order']->getOrderID()] = true;
-            }
-        }
-
-        $open = [];
-        $debt = 0.0;
-        foreach ($this->orders($uID, 'unpaid') as $order) {
-            if (isset($tabOrderIDs[(int) $order->getOrderID()])) {
-                continue;
-            }
-            $open[] = $this->describe($order);
-            $debt += (float) $order->getTotal();
-        }
-        foreach ($tabs as $tab) {
-            if ($tab['open'] && $tab['order']) {
-                $debt += (float) $tab['order']->getTotal();
-            }
-        }
+        [$open, $debt] = $this->openOrders($uID, $tabs);
 
         $paid = [];
         foreach ($this->orders($uID, 'paid', $paidLimit) as $order) {
@@ -69,6 +49,55 @@ class AccountOverview
             'debt' => $debt,
             'net' => round($balance - $debt, 2),
         ];
+    }
+
+    /**
+     * Credit, what is owed on open orders and tabs, and the net of both: build() without the history and paid orders,
+     * for places that show only the numbers (theme navigation).
+     *
+     * @return array{balance: float, debt: float, net: float}
+     */
+    public function summary(int $uID): array
+    {
+        [, $debt] = $this->openOrders($uID, $this->eventTabs($uID), false);
+        $balance = round((float) $this->credit->getBalance($uID), 2);
+        $debt = round($debt, 2);
+
+        return ['balance' => $balance, 'debt' => $debt, 'net' => round($balance - $debt, 2)];
+    }
+
+    /**
+     * Unpaid orders outside the event tabs (described, when asked for) and the debt of those plus the open tabs.
+     *
+     * @return array{0: array, 1: float}
+     */
+    protected function openOrders(int $uID, array $tabs, bool $describe = true): array
+    {
+        $tabOrderIDs = [];
+        foreach ($tabs as $tab) {
+            if ($tab['order']) {
+                $tabOrderIDs[(int) $tab['order']->getOrderID()] = true;
+            }
+        }
+
+        $open = [];
+        $debt = 0.0;
+        foreach ($this->orders($uID, 'unpaid') as $order) {
+            if (isset($tabOrderIDs[(int) $order->getOrderID()])) {
+                continue;
+            }
+            if ($describe) {
+                $open[] = $this->describe($order);
+            }
+            $debt += (float) $order->getTotal();
+        }
+        foreach ($tabs as $tab) {
+            if ($tab['open'] && $tab['order']) {
+                $debt += (float) $tab['order']->getTotal();
+            }
+        }
+
+        return [$open, $debt];
     }
 
     /**
