@@ -1,0 +1,567 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the community_store_credit package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: community_store_credit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-09 22:02+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: community_store_credit/controller.php:36
+msgid "Community Store Credit"
+msgstr "Community Store Credit"
+
+#: community_store_credit/controller.php:41
+msgid "Store credit balances for Community Store customers, spendable as a payment method at checkout."
+msgstr "Guthaben für Kunden von Community Store, einlösbar als Zahlungsart an der Kasse."
+
+#: community_store_credit/controller.php:65
+msgid "This package requires that Community Store be installed."
+msgstr "Dieses Paket setzt voraus, dass Community Store installiert ist."
+
+#: community_store_credit/controller.php:94
+msgid "Pay with store credit"
+msgstr "Mit Guthaben bezahlen"
+
+#: community_store_credit/controller.php:98
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:66
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:24
+msgid "Store Credit"
+msgstr "Guthaben"
+
+#: community_store_credit/controller.php:98
+msgid "Customer store credit balances"
+msgstr "Guthaben der Kunden"
+
+#: community_store_credit/controller.php:106
+#: community_store_credit/controllers/single_page/account/credit.php:45
+msgid "Credit & Orders"
+msgstr "Guthaben & Bestellungen"
+
+#: community_store_credit/controller.php:106
+msgid "Store credit, event tabs and orders"
+msgstr "Guthaben, Event-Rechnungen und Bestellungen"
+
+#: community_store_credit/controller.php:131
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:36
+msgid "Customers"
+msgstr "Kunden"
+
+#: community_store_credit/controller.php:131
+msgid "Debts and store credit per customer"
+msgstr "Schulden und Guthaben pro Kunde"
+
+#: community_store_credit/single_pages/account/credit.php:24
+msgid "No items yet."
+msgstr "Noch keine Positionen."
+
+#: community_store_credit/single_pages/account/credit.php:34
+#, php-format
+msgid "Pay %s now"
+msgstr "%s jetzt bezahlen"
+
+#: community_store_credit/single_pages/account/credit.php:37
+#: community_store_credit/single_pages/account/credit.php:101
+#: community_store_credit/single_pages/dashboard/store/customers.php:111
+msgid "Unpaid"
+msgstr "Unbezahlt"
+
+#: community_store_credit/single_pages/account/credit.php:37
+#: community_store_credit/single_pages/account/credit.php:66
+#: community_store_credit/single_pages/dashboard/store/customers.php:111
+msgid "Paid"
+msgstr "Bezahlt"
+
+#: community_store_credit/single_pages/account/credit.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:111
+msgid "Refunded"
+msgstr "Rückerstattet"
+
+#: community_store_credit/single_pages/account/credit.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:111
+msgid "Cancelled"
+msgstr "Storniert"
+
+#: community_store_credit/single_pages/account/credit.php:44
+#: community_store_credit/single_pages/dashboard/store/customers.php:104
+#: community_store_credit/single_pages/dashboard/store/customers.php:154
+msgid "Store credit"
+msgstr "Guthaben"
+
+#: community_store_credit/single_pages/account/credit.php:45
+#: community_store_credit/single_pages/account/credit.php:87
+msgid "Open orders"
+msgstr "Offene Bestellungen"
+
+#: community_store_credit/single_pages/account/credit.php:46
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:67
+#: community_store_credit/single_pages/dashboard/store/customers.php:105
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Net"
+msgstr "Saldo"
+
+#: community_store_credit/single_pages/account/credit.php:50
+msgid "Event tabs"
+msgstr "Event-Rechnungen"
+
+#: community_store_credit/single_pages/account/credit.php:51
+msgid "Your standing orders at events: tickets and everything you put on your tab. An open tab is settled at the event checkout or online."
+msgstr "Deine laufenden Bestellungen an Events: Tickets und alles, was du auf deine Rechnung gesetzt hast. Eine offene Rechnung wird beim Event-Checkout oder online abgerechnet."
+
+#: community_store_credit/single_pages/account/credit.php:55
+msgid "cash"
+msgstr "bar"
+
+#: community_store_credit/single_pages/account/credit.php:55
+msgid "card"
+msgstr "Karte"
+
+#: community_store_credit/single_pages/account/credit.php:55
+msgid "online"
+msgstr "online"
+
+#: community_store_credit/single_pages/account/credit.php:55
+msgid "waived"
+msgstr "erlassen"
+
+#: community_store_credit/single_pages/account/credit.php:61
+#: community_store_credit/single_pages/account/credit.php:96
+#: community_store_credit/single_pages/account/credit.php:125
+#: community_store_credit/single_pages/account/credit.php:154
+#: community_store_credit/src/Service/PayrexxCheckout.php:94
+#, php-format
+msgid "Order #%s"
+msgstr "Bestellung #%s"
+
+#: community_store_credit/single_pages/account/credit.php:64
+#, php-format
+msgid "Settled (%s)"
+msgstr "Abgerechnet (%s)"
+
+#: community_store_credit/single_pages/account/credit.php:68
+msgid "Tab open"
+msgstr "Rechnung offen"
+
+#: community_store_credit/single_pages/account/credit.php:74
+#: community_store_credit/single_pages/account/credit.php:107
+msgid "Total"
+msgstr "Total"
+
+#: community_store_credit/single_pages/account/credit.php:78
+msgid "Pay at the event checkout."
+msgstr "Bezahle beim Event-Checkout."
+
+#: community_store_credit/single_pages/account/credit.php:89
+msgid "You have no open orders."
+msgstr "Du hast keine offenen Bestellungen."
+
+#: community_store_credit/single_pages/account/credit.php:110
+#: community_store_credit/src/Service/PayrexxCheckout.php:77
+msgid "Online payment is not available at the moment."
+msgstr "Online-Zahlung ist im Moment nicht verfügbar."
+
+#: community_store_credit/single_pages/account/credit.php:118
+#: community_store_credit/single_pages/dashboard/store/customers.php:106
+msgid "Paid orders"
+msgstr "Bezahlte Bestellungen"
+
+#: community_store_credit/single_pages/account/credit.php:133
+#, php-format
+msgid "Paid on %s"
+msgstr "Bezahlt am %s"
+
+#: community_store_credit/single_pages/account/credit.php:141
+msgid "Store credit history"
+msgstr "Guthaben-Verlauf"
+
+#: community_store_credit/single_pages/account/credit.php:143
+msgid "No entries yet."
+msgstr "Noch keine Einträge."
+
+#: community_store_credit/single_pages/account/credit.php:147
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+#: community_store_credit/single_pages/dashboard/store/customers.php:157
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:30
+msgid "Date"
+msgstr "Datum"
+
+#: community_store_credit/single_pages/account/credit.php:147
+#: community_store_credit/single_pages/dashboard/store/customers.php:157
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:18
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:31
+msgid "Comment"
+msgstr "Kommentar"
+
+#: community_store_credit/single_pages/account/credit.php:147
+#: community_store_credit/single_pages/dashboard/store/customers.php:157
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:33
+msgid "Order"
+msgstr "Bestellung"
+
+#: community_store_credit/single_pages/account/credit.php:147
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+#: community_store_credit/single_pages/dashboard/store/customers.php:157
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:34
+msgid "Amount"
+msgstr "Betrag"
+
+#: community_store_credit/src/Service/PayrexxCheckout.php:80
+msgid "This order cannot be paid online."
+msgstr "Diese Bestellung kann nicht online bezahlt werden."
+
+#: community_store_credit/src/Service/PayrexxCheckout.php:116
+#: community_store_credit/src/Service/PayrexxCheckout.php:120
+msgid "The payment page could not be created. Please try again later."
+msgstr "Die Zahlungsseite konnte nicht erstellt werden. Bitte versuche es später nochmals."
+
+#: community_store_credit/src/Listener/OrderListener.php:55
+#, php-format
+msgid "Refund for cancelled order #%s"
+msgstr "Rückerstattung für stornierte Bestellung #%s"
+
+#: community_store_credit/src/Report/CustomerBalanceReport.php:175
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:49
+msgid "Guests / no account"
+msgstr "Gäste / ohne Konto"
+
+#: community_store_credit/elements/community_store_credit/checkout_form.php:3
+#, php-format
+msgid "Your store credit: %s"
+msgstr "Dein Guthaben: %s"
+
+#: community_store_credit/elements/community_store_credit/checkout_form.php:4
+#, php-format
+msgid "This order (%s) will be deducted from it."
+msgstr "Diese Bestellung (%s) wird davon abgezogen."
+
+#: community_store_credit/elements/community_store_credit/checkout_form.php:9
+msgid "Processing..."
+msgstr "Wird verarbeitet..."
+
+#: community_store_credit/elements/community_store_credit/dashboard_form.php:3
+msgid "Customers can pay with their store credit when it covers the whole order. Balances are managed under Store › Store Credit."
+msgstr "Kunden können mit ihrem Guthaben bezahlen, wenn es die ganze Bestellung deckt. Guthaben werden unter Store › Guthaben verwaltet."
+
+#: community_store_credit/controllers/single_page/account/credit.php:32
+#, php-format
+msgid "The payment for order #%s was not completed. You can try again."
+msgstr "Die Zahlung für Bestellung #%s wurde nicht abgeschlossen. Du kannst es nochmals versuchen."
+
+#: community_store_credit/controllers/single_page/account/credit.php:34
+#, php-format
+msgid "The payment for order #%s was cancelled."
+msgstr "Die Zahlung für Bestellung #%s wurde abgebrochen."
+
+#: community_store_credit/controllers/single_page/account/credit.php:93
+#, php-format
+msgid "Thank you, order #%s is paid."
+msgstr "Danke, Bestellung #%s ist bezahlt."
+
+#: community_store_credit/controllers/single_page/account/credit.php:96
+#, php-format
+msgid "The payment for order #%s has not been confirmed yet. The order is updated as soon as the payment provider confirms it."
+msgstr "Die Zahlung für Bestellung #%s ist noch nicht bestätigt. Die Bestellung wird aktualisiert, sobald der Zahlungsanbieter sie bestätigt."
+
+#: community_store_credit/controllers/single_page/account/credit.php:99
+#, php-format
+msgid "Order #%s will be marked paid as soon as the payment provider confirms the payment."
+msgstr "Bestellung #%s wird als bezahlt markiert, sobald der Zahlungsanbieter die Zahlung bestätigt."
+
+#: community_store_credit/controllers/single_page/account/credit.php:112
+msgid "Unknown order."
+msgstr "Unbekannte Bestellung."
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:5
+msgid "Name, e-mail or user id"
+msgstr "Name, E-Mail oder Benutzer-ID"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:6
+msgid "Search"
+msgstr "Suchen"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:9
+msgid "No store credit entries yet."
+msgstr "Noch keine Guthaben-Einträge."
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:14
+#: community_store_credit/single_pages/dashboard/store/customers.php:62
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Customer"
+msgstr "Kunde"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:15
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:16
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:6
+msgid "Balance"
+msgstr "Guthaben"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:17
+msgid "Entries"
+msgstr "Einträge"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:18
+msgid "Last entry"
+msgstr "Letzter Eintrag"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:25
+#, php-format
+msgid "Deleted user #%s"
+msgstr "Gelöschter Benutzer #%s"
+
+#: community_store_credit/single_pages/dashboard/store/credit.php:30
+msgid "History / Adjust"
+msgstr "Verlauf / Anpassen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:17
+msgid "Export CSV"
+msgstr "CSV exportieren"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:24
+msgid "Customer Search"
+msgstr "Kundensuche"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:25
+msgid "Name, e-mail or customer id"
+msgstr "Name, E-Mail oder Kunden-ID"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:30
+msgid "Show"
+msgstr "Anzeigen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:31
+msgid "All customers with debt or credit"
+msgstr "Alle Kunden mit Schulden oder Guthaben"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:31
+msgid "Customers with debt"
+msgstr "Kunden mit Schulden"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:31
+msgid "Customers with credit"
+msgstr "Kunden mit Guthaben"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:31
+msgid "Non-zero net only"
+msgstr "Nur Saldo ungleich null"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:36
+msgid "Order By"
+msgstr "Sortieren nach"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:65
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Debt"
+msgstr "Schulden"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+msgid "Name"
+msgstr "Name"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+#: community_store_credit/single_pages/dashboard/store/customers.php:68
+msgid "Last paid order"
+msgstr "Letzte bezahlte Bestellung"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:37
+msgid "Unpaid orders"
+msgstr "Unbezahlte Bestellungen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:44
+msgid "Filter Results"
+msgstr "Ergebnisse filtern"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:53
+msgid "Customers listed"
+msgstr "Aufgelistete Kunden"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:54
+#, php-format
+msgid "Debts (%d customers, %d unpaid orders)"
+msgstr "Schulden (%d Kunden, %d unbezahlte Bestellungen)"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:55
+#, php-format
+msgid "Store credit (%d customers)"
+msgstr "Guthaben (%d Kunden)"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:56
+msgid "Net (credit minus debt)"
+msgstr "Saldo (Guthaben minus Schulden)"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:63
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Email"
+msgstr "E-Mail"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:64
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Unpaid Orders"
+msgstr "Unbezahlte Bestellungen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:74
+msgid "inactive"
+msgstr "inaktiv"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:84
+msgid "No customers match."
+msgstr "Keine passenden Kunden."
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:97
+msgid "Store Credit history / adjust"
+msgstr "Guthaben-Verlauf / Anpassen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:99
+msgid "Back to report"
+msgstr "Zurück zum Bericht"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:103
+#, php-format
+msgid "Debt (%d unpaid orders)"
+msgstr "Schulden (%d unbezahlte Bestellungen)"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:109
+msgid "Order history"
+msgstr "Bestellverlauf"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:109
+#, php-format
+msgid "%d unpaid, %d paid, %d refunded, %d cancelled, %d payment pending"
+msgstr "%d unbezahlt, %d bezahlt, %d rückerstattet, %d storniert, %d Zahlung ausstehend"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:111
+msgid "Payment pending"
+msgstr "Zahlung ausstehend"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+msgid "Order #"
+msgstr "Bestellung #"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+msgid "Payment"
+msgstr "Zahlung"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+msgid "Status"
+msgstr "Status"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+msgid "Method"
+msgstr "Zahlungsart"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:116
+msgid "Items"
+msgstr "Positionen"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:150
+msgid "No orders."
+msgstr "Keine Bestellungen."
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:157
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:32
+msgid "Source"
+msgstr "Quelle"
+
+#: community_store_credit/single_pages/dashboard/store/customers.php:169
+msgid "No store credit entries."
+msgstr "Keine Guthaben-Einträge."
+
+#: community_store_credit/controllers/single_page/dashboard/store/credit.php:26
+#: community_store_credit/controllers/single_page/dashboard/store/credit.php:50
+msgid "Unknown user."
+msgstr "Unbekannter Benutzer."
+
+#: community_store_credit/controllers/single_page/dashboard/store/credit.php:54
+msgid "The amount must be a number other than zero."
+msgstr "Der Betrag muss eine Zahl ungleich null sein."
+
+#: community_store_credit/controllers/single_page/dashboard/store/credit.php:58
+msgid "A comment is required."
+msgstr "Ein Kommentar ist erforderlich."
+
+#: community_store_credit/controllers/single_page/dashboard/store/credit.php:68
+#, php-format
+msgid "Booked %s for %s."
+msgstr "%s für %s gebucht."
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:45
+msgid "Unknown customer."
+msgstr "Unbekannter Kunde."
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:68
+#, php-format
+msgid "Balance of %s"
+msgstr "Guthaben von %s"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Customer Id"
+msgstr "Kunden-ID"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Paid Orders"
+msgstr "Bezahlte Bestellungen"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Paid Total"
+msgstr "Total bezahlt"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Last Paid Order"
+msgstr "Letzte bezahlte Bestellung"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:74
+msgid "Oldest Unpaid Order"
+msgstr "Älteste unbezahlte Bestellung"
+
+#: community_store_credit/controllers/single_page/dashboard/store/customers.php:80
+msgid "customer_balances"
+msgstr "kunden_guthaben"
+
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:4
+msgid "All balances"
+msgstr "Alle Guthaben"
+
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:14
+msgid "Amount (+ adds, - deducts)"
+msgstr "Betrag (+ gutschreiben, - abziehen)"
+
+#: community_store_credit/single_pages/dashboard/store/credit/history.php:22
+msgid "Book"
+msgstr "Buchen"
+
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:55
+msgid "Store credit can only be used by signed in customers."
+msgstr "Guthaben können nur angemeldete Kunden verwenden."
+
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:68
+msgid "Checkout"
+msgstr "Kasse"
+
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:70
+#, php-format
+msgid "Your store credit (%s) does not cover this order (%s)."
+msgstr "Dein Guthaben (%s) deckt diese Bestellung (%s) nicht."
+
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:73
+msgid "Store credit could not be charged, please try again."
+msgstr "Das Guthaben konnte nicht belastet werden, bitte versuche es nochmals."
+
+#: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:77
+msgid "Your cart changed since the last attempt, please review it and try again."
+msgstr "Dein Warenkorb hat sich seit dem letzten Versuch geändert, bitte prüfe ihn und versuche es nochmals."
