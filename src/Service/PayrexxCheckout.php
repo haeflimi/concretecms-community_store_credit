@@ -100,8 +100,8 @@ class PayrexxCheckout
         $gateway->setCancelRedirectUrl((string) Url::to('/account/credit', 'cancelled', $oID));
         $gateway->setSkipResultPage(false);
         $gateway->addField('email', (string) ($order->getAttribute('email') ?: $ui->getUserEmail()));
-        $first = (string) ($order->getAttribute('billing_first_name') ?: $ui->getAttribute('user_firstname') ?: $ui->getAttribute('first_name'));
-        $last = (string) ($order->getAttribute('billing_last_name') ?: $ui->getAttribute('user_lastname') ?: $ui->getAttribute('last_name'));
+        $first = (string) ($order->getAttribute('billing_first_name') ?: $ui->getAttribute('billing_first_name'));
+        $last = (string) ($order->getAttribute('billing_last_name') ?: $ui->getAttribute('billing_last_name'));
         if ($first !== '') {
             $gateway->addField('forename', $first);
         }
