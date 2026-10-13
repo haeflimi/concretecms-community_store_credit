@@ -565,3 +565,7 @@ msgstr "Das Guthaben konnte nicht belastet werden, bitte versuche es nochmals."
 #: community_store_credit/src/CommunityStore/Payment/Methods/CommunityStoreCredit/CommunityStoreCreditPaymentMethod.php:77
 msgid "Your cart changed since the last attempt, please review it and try again."
 msgstr "Dein Warenkorb hat sich seit dem letzten Versuch geändert, bitte prüfe ihn und versuche es nochmals."
+
+#: controller.php
+msgid "This package requires that Community Store Open Orders be installed."
+msgstr "Dieses Paket benötigt das installierte Paket Community Store Open Orders."
