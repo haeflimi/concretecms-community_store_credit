@@ -14,14 +14,17 @@ Store credit for [Community Store](https://github.com/concretecms-community-stor
   refunded orders), store credit and the net, with search, filters, sorting, totals, CSV export and a detail
   page with the customer's complete order history (unpaid, paid, refunded, cancelled, payment pending) and
   credit entries.
-- `/account/credit` ("Credit & Orders"): the customer's balance and history, their standing event tabs with
-  contents (when community_event_manager is installed), other open orders with contents, and the paid orders.
-  Open orders and open tabs get a "Pay now" button when community_store_payrexx is installed and configured
-  (`community_store_payrexx.instanceName` / `.secret` / `.currency`): `CommunityStoreCredit\Service\PayrexxCheckout`
-  creates a Payrexx gateway per order (reference `csorder_<oID>_…` stored as the order's transaction reference,
-  so the add-on's webhook completes the order) and, when the customer returns, verifies the gateway with the
-  Payrexx API before marking the order paid. Paying a tab online settles it (the event manager marks the tab
-  "online" on the store's payment event).
+- The customer's account page is the one of community_store_open_orders (`/account/orders`, required): while this
+  package is installed it is called "Credit & Orders" and shows the credit, the net of credit and open orders, and
+  the credit history next to the open orders and their "Pay now" buttons. `CommunityStoreCredit\Service\AccountOverview::summary()`
+  gives credit, debt and net in one call (theme navigation, event signup gate).
 
 API: `CommunityStoreCredit\Service\CreditService` (`getBalance`, `getHistory`, `add`, `charge`, `findByReference`).
 The table is kept when the package is uninstalled.
+
+## Upgrading
+
+* **1.3.0** the account page with the open orders and their online payment moved to community_store_open_orders
+  (`/account/orders`), so customers can pay open orders without store credit. Install that package first; the upgrade
+  deletes this package's `/account/credit` page (old links redirect) and names the new page "Credit & Orders".
+  `AccountOverview` only has `summary()` now; `PayrexxCheckout` is `CommunityStoreOpenOrders\PayrexxCheckout`.
